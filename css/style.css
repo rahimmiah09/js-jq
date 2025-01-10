@@ -1,0 +1,17 @@
+.toogle {
+  padding: 10px 10px;
+}
+
+.content {
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+#draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: red;
+  color: white;
+}

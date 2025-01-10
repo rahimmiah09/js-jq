@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="js/JQ" />
+    <meta name="description" content="its a tutorial for botstrap font" />
+    <meta name="keywords" content="bootstrap,font,website,tutorial" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="RAHIM MIAH" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>JS/JQ</title>
+  </head>
+  <body>
+    <!-- ex1 -->
+    <div class="container">
+      <h2>click the button to show the text</h2>
+      <button class="btn btn-dark" onclick=" showText()">show text</button>
+      <h3 id="st"></h3>
+    </div>
+
+    <!-- ex2 -->
+    <hr />
+    <div class="container">
+      <h2>click the button to show the date</h2>
+      <button class="btn btn-dark" onclick=" showDate()">show date</button>
+      <h3 id="dt">date is:</h3>
+    </div>
+    <!-- ex3 -->
+    <hr />
+    <div class="container">
+      <h2>click the button to change the text</h2>
+      <button class="btn btn-dark" onclick=" showChange()">show change</button>
+      <h3 id="ct">hi i am rahim</h3>
+    </div>
+
+    <!-- ex4 -->
+    <hr />
+    <div class="container">
+      <h2>click to turn the light on and off</h2>
+      <button class="btn btn-dark" onclick="bon()">light on</button>
+      <button class="btn btn-dark" onclick=" boff()">light off</button>
+      <img src="images/pic_bulboff.gif" alt="js/jq" id="boo" />
+    </div>
+
+    <!-- ex5-->
+    <hr />
+    <div class="container">
+      <h2>click the button to change the css</h2>
+      <button class="btn btn-dark" onclick=" showChangeCss()">
+        show change
+      </button>
+      <h3 id="css">hi i am rahim</h3>
+    </div>
+
+    <!-- ex6 -->
+    <hr />
+    <div class="container">
+      <h2>click to hide the text</h2>
+      <button class="btn btn-dark" onclick="hideCon()">hide text</button>
+      <button class="btn btn-dark" onclick="showCon() ">show text</button>
+      <h3 id="ht">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        deleniti.
+      </h3>
+    </div>
+
+    <!-- ex5-->
+    <hr />
+    <div class="container">
+      <h2>click the button to show the result of 30 + 70</h2>
+      <button class="btn btn-dark" onclick=" showResult()">show result</button>
+      <h3 id="sr"></h3>
+    </div>
+
+    <h1>this is jqueryu below this line of sentence</h1>
+
+    <!-- here is jquery start  -->
+    <!-- js1exmp -->
+    <hr />
+    <div class="container">
+      <h1>click the button to show the alert</h1>
+      <button class="btn btn-dark" id="btnbro">
+        click me to show the alert
+      </button>
+      <hr />
+      <h1>click the button to show and hide the text</h1>
+      <button class="btn btn-dark" id="btnsj">click me to show the text</button>
+      <button class="btn btn-dark" id="btnhj">click me to hide the text</button>
+      <button class="btn btn-dark" id="btntj">
+        click me to show/hide the text
+      </button>
+      <h3>hey guys i am rahim miah</h3>
+
+      <hr />
+
+      <div class="toogle bg-danger text-white">
+        <h1>hi i am rahim miah click to know about me</h1>
+      </div>
+      <div class="content bg-dark text-white">
+        <h2>hello i am human i have hands legs eyes and a life</h2>
+      </div>
+      <hr />
+      <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
+
+      <hr />
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+            Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+            condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+            Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit
+            eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
+            amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris
+            turpis porttitor velit, faucibus interdum tellus libero ac justo.
+            Vivamus non quam. In suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+            lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+            Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
+            commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu
+            iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean
+            lacinia mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+            lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <h1>try to write my name start with r</h1>
+
+      <div class="ui-widget">
+        <label for="tags">my name: </label>
+        <input id="tags" />
+      </div>
+    </div>
+    <!-- JS LINK -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
